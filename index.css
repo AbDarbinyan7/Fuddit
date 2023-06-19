@@ -276,7 +276,7 @@ header {
 }
 
 .tba_section {
-  margin: 200px auto 300px;
+  margin: 200px auto 285px;
   text-align: center;
 }
 
@@ -304,5 +304,5 @@ footer {
   font-family: "Inter";
   font-weight: 600;
   font-size: 18px;
-  margin-top: 400px;
+  margin-top: 285px;
 }
