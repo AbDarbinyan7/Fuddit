@@ -1,9 +1,9 @@
 @font-face {
   font-family: "RockoFLF";
-  src: url("/fonts/RockoFLF/RockoFLF.ttf") format("truetype"),
-    url("/fonts/RockoFLF/RockoFLF-Bold.ttf") format("truetype"),
-    url("/fonts/RockoFLF/RockoUltraFLF.ttf") format("truetype"),
-    url("/fonts/RockoFLF/RockoUltraFLF-Bold.ttf") format("truetype");
+  src: url("./fonts/RockoFLF/RockoFLF.ttf") format("truetype"),
+    url("./fonts/RockoFLF/RockoFLF-Bold.ttf") format("truetype"),
+    url("./fonts/RockoFLF/RockoUltraFLF.ttf") format("truetype"),
+    url("./fonts/RockoFLF/RockoUltraFLF-Bold.ttf") format("truetype");
 }
 
 * {
@@ -32,7 +32,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 0;
+  padding: 30px 0;
 }
 
 .header__logo_box {
@@ -53,7 +53,7 @@ header {
 .header__links {
   display: flex;
   align-items: center;
-  gap: 90px;
+  gap: 80px;
   font-size: 24px;
   font-weight: 700;
   letter-spacing: 0.04em;
@@ -63,7 +63,7 @@ header {
   display: grid;
   grid-template-columns: repeat(4, 52px);
   align-items: center;
-  gap: 67px;
+  gap: 56px;
 }
 
 .header__icon {
@@ -100,7 +100,8 @@ header {
 
 .under_header_section__right__second_img {
   position: absolute;
-  top: 45px;
+  top: 49px;
+  left: -37px;
   z-index: 11;
 }
 
@@ -127,21 +128,24 @@ header {
 }
 
 .show_me_section__title__first_img {
+  max-height: 282.53px;
   position: absolute;
-  left: -230px;
-  top: -125px;
+  left: -185px;
+  top: -80px;
 }
 
 .show_me_section__title__second_img {
+  max-height: 122px;
   position: absolute;
-  right: -40px;
-  top: -100px;
+  right: -5px;
+  top: -64px;
 }
 
 .show_me_section__title__third_img {
+  max-height: 176.28px;
   position: absolute;
-  right: -195px;
-  top: 0px;
+  right: -161px;
+  top: 25px;
 }
 
 .show_me_section__text {
@@ -161,10 +165,14 @@ header {
   margin-top: 150px;
 }
 
+.show_me_section__image__round_img {
+  max-height: 768px;
+}
+
 .show_me_section__image__first_potato {
   position: absolute;
-  left: 390px;
-  top: 15px;
+  left: 387px;
+  top: 18px;
 }
 
 .show_me_section__image__second_potato {
@@ -175,8 +183,8 @@ header {
 
 .show_me_section__image__third_potato {
   position: absolute;
-  right: 169px;
-  bottom: 260px;
+  right: 225px;
+  bottom: 239px;
 }
 
 .listings_section {
@@ -293,6 +301,7 @@ header {
 }
 
 .tba_section__tba__bear {
+  max-height: 404px;
   position: absolute;
   bottom: -286px;
   right: 178px;
