@@ -14,6 +14,10 @@
 
 body {
   font-family: "RockoFLF";
+  background-image: url("/images/Background.png");
+  background-size: cover;
+  background-repeat: repeat;
+  background-attachment: fixed;
 }
 
 a {
@@ -33,6 +37,10 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 30px 0;
+}
+
+.mobile_header {
+  display: none;
 }
 
 .header__logo_box {
@@ -114,6 +122,10 @@ header {
 
 .show_me_section {
   padding: 120px 0;
+}
+
+.show_me_section__mobile_img {
+  display: none;
 }
 
 .show_me_section__title {
@@ -205,6 +217,10 @@ header {
   margin: 90px 0;
 }
 
+.mobile_lists {
+  display: none;
+}
+
 .listings_section__lists__list {
   min-width: 382px;
   min-height: 82px;
@@ -230,6 +246,10 @@ header {
   line-height: 110%;
   text-align: center;
   letter-spacing: 0.04em;
+}
+
+.mobile_dex_listings_liquidity_box {
+  display: none;
 }
 
 .stats_section__token_box {
@@ -286,6 +306,10 @@ header {
 .tba_section {
   margin: 200px auto 285px;
   text-align: center;
+}
+
+.mobile__tba_section_tba {
+  display: none;
 }
 
 .tba_section__title {

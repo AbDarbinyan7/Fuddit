@@ -570,10 +570,6 @@
     gap: 10px;
   }
 
-  .header__logo_box img {
-    display: none;
-  }
-
   .header__links {
     gap: 5px;
     font-size: 14px;
@@ -656,7 +652,7 @@
   }
 
   .under_header_section__right {
-    min-width: 150px;
+    min-width: 340px;
   }
 
   .under_header_section__right__second_img {

@@ -21,6 +21,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./media_queires.css" />
+    <link rel="stylesheet" href="./mobile.css" />
   </head>
   <body>
     <header class="container">
@@ -52,6 +53,30 @@
         </a>
       </div>
     </header>
+    <div class="mobile_modal">
+      <div class="close_modal_icon">
+        <img src="./images/close_modal_icon.svg" alt="" />
+      </div>
+      <div class="mobile_modal__links">
+        <a href="">about </a>
+        <a href=""> metrics</a>
+        <a href="">listings </a>
+        <a href=""> manifesto </a>
+      </div>
+      <img src="./images/modal_red_fuddit.png" alt="" />
+    </div>
+    <header class="mobile_header">
+      <a href="" class="mobile_header__logo">
+        <img src="./images/fuddit_logo.svg" alt="" />
+      </a>
+      <div href="" class="mobile_header__menu_icon">
+        <img
+          class="mobile_header__menu_icon__img"
+          src="./images/menu_icon.svg"
+          alt=""
+        />
+      </div>
+    </header>
     <div class="under_header_section container">
       <div class="under_header_section__left">
         <p>
@@ -63,21 +88,26 @@
         <img
           src="./images/fuddit.png"
           alt=""
-          class="under_header_section__right__first_img"
+          class="under_header_section__right__first_img fuddit"
         />
         <img
           src="./images/red_fuddit.png"
           alt=""
-          class="under_header_section__right__second_img"
+          class="under_header_section__right__second_img fuddit"
         />
         <img
           src="./images/fuddit.png"
           alt=""
-          class="under_header_section__right__third_img"
+          class="under_header_section__right__third_img fuddit"
         />
       </div>
     </div>
     <div class="show_me_section container">
+      <img
+        src="./images/for_mobile_big_zombie.png"
+        class="show_me_section__mobile_img"
+        alt=""
+      />
       <h1 class="show_me_section__title">
         <img
           src="./images/zombie.png"
@@ -143,7 +173,7 @@
       <div class="listings_section__title">
         <span style="color: red">FUDDIT</span> Listings
       </div>
-      <div class="listings_section__lists">
+      <div class="listings_section__lists for_desctop">
         <a href="#" class="listings_section__lists__list">
           <img src="./images/horse_icon.svg" alt="" /> Uniswap
         </a>
@@ -164,6 +194,27 @@
           <img src="./images/media_icon.svg" alt="" /> Coinmarketcap
         </a>
       </div>
+      <div class="listings_section__lists mobile_lists">
+        <a href="#" class="listings_section__lists__list">
+          <img src="./images/horse_icon.svg" alt="" /> Uniswap
+        </a>
+        <a href="#" class="listings_section__lists__list">
+          <img src="./images/pancake_icon.svg" alt="" /> Pancakeswap
+        </a>
+        <a href="#" class="listings_section__lists__list">
+          <img src="./images/dextools_icon.svg" alt="" /> Dextools
+        </a>
+        <a href="#" class="listings_section__lists__list">
+          <img src="./images/animal_icon.svg" alt="" /> Coingecko
+        </a>
+        <a href="#" class="listings_section__lists__list">
+          <img src="./images/media_icon.svg" alt="" /> Coinmarketcap
+        </a>
+        <a href="#" class="listings_section__lists__list">
+          <img src="./images/dexscreener_icon.svg" alt="" />
+          Dexscreener
+        </a>
+      </div>
     </div>
     <div class="stats_section container">
       <h1 class="stats_section__title">
@@ -171,7 +222,9 @@
         stats?
       </h1>
       <div class="stats_section__token_box">
-        <div class="stats_section__token_box__percents__values dex_listings">
+        <div
+          class="stats_section__token_box__percents__values dex_listings desctop_dex_listings"
+        >
           <span
             class="stats_section__token_box__percents__values__percent"
             style="color: red"
@@ -181,7 +234,9 @@
             >DEX Listings</span
           >
         </div>
-        <div class="stats_section__token_box__percents__values liquidity_pool">
+        <div
+          class="stats_section__token_box__percents__values liquidity_pool desctop_liquidity_pool"
+        >
           <span class="stats_section__token_box__percents__values__percent"
             >93.1%</span
           >
@@ -194,15 +249,62 @@
           <span style="color: red; font-weight: 700">420 trilion</span>
         </div>
         <div class="stats_section__token_box__percents"></div>
+        <div class="mobile_dex_listings_liquidity_box">
+          <div class="stats_section__token_box__percents__values dex_listings">
+            <span
+              class="stats_section__token_box__percents__values__percent"
+              style="color: red"
+              >6.9%</span
+            >
+            <span class="stats_section__token_box__percents__values__item"
+              >DEX Listings</span
+            >
+          </div>
+          <div
+            class="stats_section__token_box__percents__values liquidity_pool"
+          >
+            <span class="stats_section__token_box__percents__values__percent"
+              >93.1%</span
+            >
+            <span class="stats_section__token_box__percents__values__item"
+              >Liquidity Pool</span
+            >
+          </div>
+        </div>
       </div>
     </div>
     <div class="tba_section container">
       <h1 class="tba_section__title">What’s Next???</h1>
-      <p class="tba_section__tba">
+      <p class="tba_section__tba desctop_tba">
         TBA
         <img src="./images/bear.png" alt="" class="tba_section__tba__bear" />
       </p>
+      <div class="mobile__tba_section_tba">
+        <span>T</span>
+        <span>B</span>
+        <span>A </span>
+        <img src="./images/bear.png" alt="" class="tba_section__tba__bear" />
+      </div>
     </div>
     <footer>©2023 Fuddit. All rights reserved.</footer>
+
+    <script>
+      let menuIcon = document.querySelector(".mobile_header__menu_icon");
+      let closeModalIcon = document.querySelector(".close_modal_icon");
+      let menuIconImg = document.querySelector(
+        ".mobile_header__menu_icon__img"
+      );
+      let mobileModal = document.querySelector(".mobile_modal");
+      let body = document.querySelector("body");
+
+      menuIcon.onclick = function () {
+        mobileModal.style.display = "flex";
+        body.style.overflow = "hidden";
+      };
+      closeModalIcon.onclick = () => {
+        mobileModal.style.display = "none";
+        body.style.overflow = "scroll";
+      };
+    </script>
   </body>
 </html>
