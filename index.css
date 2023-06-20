@@ -14,7 +14,7 @@
 
 body {
   font-family: "RockoFLF";
-  background-image: url("/images/Background.png");
+  background-image: url("images/Background.png");
   background-size: cover;
   background-repeat: repeat;
   background-attachment: fixed !important;
@@ -34,7 +34,6 @@ a {
 }
 
 header {
-  min-width: 1200px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -85,6 +84,11 @@ header {
   overflow: hidden;
 }
 
+.mobile_header__logo,
+.mobile_header__menu_icon {
+  display: flex;
+}
+
 .under_header_section {
   max-width: 1100px;
   margin: 120px auto;
@@ -122,7 +126,7 @@ header {
 .under_header_section__right__third_img {
   position: absolute;
   top: 0px;
-  right: -34px;
+  right: 0;
   z-index: 121;
 }
 
@@ -228,10 +232,9 @@ header {
 }
 
 .listings_section__lists__list {
-  min-width: 382px;
-  min-height: 82px;
+  height: 66px;
   border-radius: 10px;
-  padding: 12px, 37px;
+  padding: 12px 37px;
   border: 3px solid #000000;
   display: flex;
   justify-content: center;
@@ -314,19 +317,22 @@ header {
   text-align: center;
 }
 
-.mobile__tba_section_tba {
-  display: none;
-}
-
 .tba_section__title {
   font-weight: 700;
   font-size: 100px;
 }
 
 .tba_section__tba {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
   font-weight: 700;
   font-size: 500px;
   color: red;
+  position: relative;
+}
+
+.bear-fixed {
   position: relative;
 }
 
@@ -334,14 +340,15 @@ header {
   max-height: 404px;
   position: absolute;
   bottom: -286px;
-  right: 178px;
+  left: -65px;
+  z-index: -1;
 }
 
 footer {
-  padding: 20px 0;
+  padding: 40px 0 69px;
+  background-color: #fff;
   text-align: center;
   font-family: "Inter";
   font-weight: 600;
   font-size: 18px;
-  margin-top: 285px;
 }
